@@ -73,48 +73,50 @@ public class HouseRunner {
 		list.add(dto19);
 
 
-		list.forEach((ref) -> System.out.println(ref));
-		System.out.println("");
-		list.stream().sorted((e1, e2) -> e1.getId().compareTo(e2.getId())).forEach((ref) -> System.out.println(ref));
-		System.out.println("*******************");
-		list.stream().sorted((e1,e2)->e2.getId().compareTo(e1.getId())).forEach((ref)->System.out.println(ref));
-		System.out.println("*******************");
-		list.stream().sorted((e1,e2)->e1.getName().compareTo(e2.getName())).forEach((ref)->System.out.println(ref));
-		System.out.println("*******************");
-		list.stream().sorted((e1,e2)->e2.getType().getValue().compareTo(e1.getType().getValue())).forEach((ref)->System.out.println(ref));;
-		System.out.println("*******************");
-		list.stream().sorted((e1,e2)->e2.getSqFeet().compareTo(e1.getSqFeet())).forEach((ref)->System.out.println(ref));
-		System.out.println("*******************");
-		list.stream().filter((ref)->ref.getLoan()==false).sorted((e1,e2)->e2.getOwner().compareTo(e1.getOwner())).forEach((ref)->System.out.println(ref));;
-		System.out.println("*******************");
-		list.stream().filter((ref)->ref.getLoan()==true).sorted((e1,e2)->e2.getOwner().compareTo(e2.getOwner())).forEach((ref)->System.out.println(ref));;
-		System.out.println("*******************");
-		list.stream().filter((ref)->ref.getOwningType().getValue().equals("lease"))	.sorted((e1,e2)->e1.getOwningType().getValue().compareTo(e2.getOwningType().getValue())).forEach((ref)->System.out.println(ref));
-		System.out.println("*******************");
-		list.stream().filter((ref)->ref.getType().getValue().equals("apartment")).sorted((e1,e2)->e1.getType().getValue().compareTo(e2.getType().getValue())).forEach((ref)->System.out.println(ref));
-		System.out.println("*******************");
-		list.stream().filter((ref)->ref.getType().getValue().equals("villa")).sorted((e1,e2)->e1.getType().getValue().compareTo(e2.getType().getValue())).forEach((ref)->System.out.println(ref));
-		System.out.println("*******************");
-		list.stream().sorted((e1,e2)->{
-		int m=e1.getType().getValue().compareTo(e2.getType().getValue());
-		if(m==0) {
-			return e1.getOwningType().getValue().compareTo(e2.getOwningType().getValue());
-
-		}
-		return m;
-		}).forEach((ref)->System.out.println(ref));
-
-		System.out.println("*******************");
-
-		list.stream().sorted((e1,e2)->{
-		int m=e1.getName().compareTo(e2.getName());
-		if(m==0) {
-			return e1.getId().compareTo(e2.getId());
-
-		}
-		return m;
-
-		}).forEach((ref)->System.out.println(ref));
+	//	list.forEach((ref) -> System.out.println(ref));
+//		System.out.println("");
+//	   list.stream().sorted((e1, e2) -> e1.getId().compareTo(e2.getId())).forEach((ref) -> System.out.println(ref));
+//		System.out.println("*******************");
+//		list.stream().sorted((e1,e2)->e2.getId().compareTo(e1.getId())).forEach((ref)->System.out.println(ref));
+//		System.out.println("*******************");
+//		list.stream().sorted((e1,e2)->e1.getName().compareTo(e2.getName())).forEach((ref)->System.out.println(ref));
+//		System.out.println("*******************");
+//		list.stream().sorted((e1,e2)->e2.getType().getValue().compareTo(e1.getType().getValue())).forEach((ref)->System.out.println(ref));;
+//		System.out.println("*******************");
+//		list.stream().sorted((e1,e2)->e2.getSqFeet().compareTo(e1.getSqFeet())).forEach((ref)->System.out.println(ref));
+//		System.out.println("*******************");
+//		list.stream().filter((ref)->ref.getLoan()==false).sorted((e1,e2)->e2.getOwner().compareTo(e1.getOwner())).forEach((ref)->System.out.println(ref));;
+//		System.out.println("*******************");
+//		list.stream().filter((ref)->ref.getLoan()==true).sorted((e1,e2)->e2.getOwner().compareTo(e2.getOwner())).forEach((ref)->System.out.println(ref));;
+//		System.out.println("*******************");
+//		list.stream().filter((ref)->ref.getOwningType().getValue().equals("lease"))	.sorted((e1,e2)->e1.getOwningType().getValue().compareTo(e2.getOwningType().getValue())).forEach((ref)->System.out.println(ref));
+//		System.out.println("*******************");
+//		list.stream().filter((ref)->ref.getType().getValue().equals("apartment")).sorted((e1,e2)->e1.getType().getValue().compareTo(e2.getType().getValue())).forEach((ref)->System.out.println(ref));
+//		System.out.println("*******************");
+//		list.stream().filter((ref)->ref.getType().getValue().equals("villa")).sorted((e1,e2)->e1.getType().getValue().compareTo(e2.getType().getValue())).forEach((ref)->System.out.println(ref));
+//		System.out.println("*******************");
+	   
+	   
+//		list.stream().sorted((e1,e2)->{
+//		int m=e1.getType().getValue().compareTo(e2.getType().getValue());
+//		if(m==0) {
+//			return e1.getOwningType().getValue().compareTo(e2.getOwningType().getValue());
+//
+//		}
+//		return m;
+//		}).forEach((ref)->System.out.println(ref));
+//
+//		System.out.println("*******************");
+//
+//		list.stream().sorted((e1,e2)->{
+//		int m=e1.getName().compareTo(e2.getName());
+//		if(m==0) {
+//			return e1.getId().compareTo(e2.getId());
+//
+//		}
+//		return m;
+//
+//		}).forEach((ref)->System.out.println(ref));
 	}
 
 

@@ -1,5 +1,8 @@
 package com.xworkz.milkShop.dao;
 
-public interface MilkShopDao {
+import com.xworkz.milkShop.dto.MilkShopDTO;
 
+public interface MilkShopDao {
+	
+boolean save(MilkShopDTO dto);
 }

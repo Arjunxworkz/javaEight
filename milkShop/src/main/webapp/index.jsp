@@ -10,13 +10,15 @@
 <form action="milk">
 <pre>
 Id<input type="text" name="id"/>
-OnwerName<input type="text" name="ownerName"/>
-Brand<input type="text" name="brand"/>
+OnwerName<input type="text" name="brand"/>
+Brand<input type="text" name="ownerName"/>
 Type<input type="text" name="type"/>
-Ambassador<input type="text" name="amdasssador"/>
+Ambassador<input type="text" name="ambassador"/>
 
 <input type="submit" value="save">
 </pre>
+
+
 
 </form>
 </body>

@@ -4,12 +4,13 @@ import org.springframework.web.servlet.config.annotation.DefaultServletHandlerCo
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
+import com.xworkz.milkShop.configuration.DbConfiguration;
 import com.xworkz.milkShop.configuration.MilkShopConfiguration;
 
 public class MilkShopIntilizer extends AbstractAnnotationConfigDispatcherServletInitializer implements WebMvcConfigurer{
 	
 	private String[] ServletMappings= {"/"};
-	private Class[] ServletConfigClasses= {MilkShopConfiguration.class};
+	private Class[] ServletConfigClasses= {MilkShopConfiguration.class,DbConfiguration.class};
 	
 	@Override
 	protected Class<?>[] getRootConfigClasses() {

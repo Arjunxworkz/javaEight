@@ -2,7 +2,12 @@ package com.xworkz.milkShop.dto;
 
 import java.io.Serializable;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+@Entity
+@Table(name="milkShop_info")
 public class MilkShopDTO implements Serializable {
+	
 	private Integer id;
 	private String brand;
 	private String ownerName;

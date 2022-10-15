@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="milk">
+<form action="milk" method="post">
 <pre>
 Id<input type="text" name="id"/>
 OnwerName<input type="text" name="brand"/>

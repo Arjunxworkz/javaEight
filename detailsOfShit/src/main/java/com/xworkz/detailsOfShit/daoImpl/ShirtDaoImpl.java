@@ -1,4 +1,4 @@
-package com.xworkz.milkShop.daoImpl;
+package com.xworkz.detailsOfShit.daoImpl;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -8,23 +8,23 @@ import javax.persistence.PersistenceException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.xworkz.milkShop.dao.MilkShopDao;
-import com.xworkz.milkShop.dto.MilkShopDTO;
+import com.xworkz.detailsOfShit.dao.ShirtDao;
+import com.xworkz.detailsOfShit.dto.ShirtDTO;
+
 @Repository
-public class MilkShopDaoImpl implements MilkShopDao {
+public class ShirtDaoImpl implements ShirtDao {
 	@Autowired
 	private EntityManagerFactory factory;
 
 	@Override
-	public boolean save(MilkShopDTO dtos) {
-		
-		System.out.println("Callling save method");
+	public boolean save(ShirtDTO dto) {
+System.out.println("Callling save method");
 		
 		EntityManager createEntityManager = factory.createEntityManager();
 		try {
 			EntityTransaction tr=createEntityManager.getTransaction();
 			tr.begin();
-			createEntityManager.persist(dtos);
+			createEntityManager.persist(dto);
 			tr.commit();
 		} catch (PersistenceException e) {
 			
@@ -33,8 +33,10 @@ public class MilkShopDaoImpl implements MilkShopDao {
 		finally {
 		createEntityManager.close();	
 		}
-		return true;
-		
+		return false;
 	}
 
+	
+
+	
 }

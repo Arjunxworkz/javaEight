@@ -20,6 +20,7 @@ public class MilkShopController {
 	}
    @PostMapping
   public String onSave(MilkShopDTO dto){
+	   System.out.println(dto);
 	   
 	   milkShopService.validateAndSave(dto);
 	   

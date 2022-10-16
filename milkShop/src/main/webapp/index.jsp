@@ -9,7 +9,7 @@
 <body>
 <form action="milk" method="post">
 <pre>
-Id<input type="text" name="id"/>
+
 OnwerName<input type="text" name="brand"/>
 Brand<input type="text" name="ownerName"/>
 Type<input type="text" name="type"/>

@@ -1,4 +1,4 @@
-package com.xworkz.milkShop.configuration;
+package com.xworkz.detailsOfShit.configuration;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -11,10 +11,8 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 
-
 @Configuration
 public class DbConfiguration {
-
 	public DbConfiguration() {
 		System.out.println("Created db configuration");
 	}
